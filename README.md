@@ -3,6 +3,7 @@
 
 ___
 This configuration includes Nvim-tree.lua Nvim-treesitter, Indent-blankline, lualine, colorizer, telescope, auto-session, Comment, copilot, and nvim-autopairs.
+
 Themed with [spice.nvim](https://github.com/ItsTerm1n4l/spice.nvim)
 
 ### Dependencies.
@@ -18,9 +19,17 @@ First install nvim-plug if it is not already installed.
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'`
 
 Install configuration files.
-```
+
+```sh
 git clone https://github.com/marssola/nvim.git
 cp -r ./nvim "$HOME"/.config/
+```
+
+### Install plugins.
+
+For the first time, open nvim and run `:PlugInstall` to install the plugins or run the following command.
+
+```sh
 nvim --cmd ":PlugInstall"
 ```
 
