@@ -94,7 +94,8 @@ autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NvimTreeFocus | endif
 autocmd BufWritePre * :%s/\s\+$//e
 
 " Keybinds
-map     <F4> <esc>:q<enter><Right>
+map     <F8> <esc>:q<enter><Right>
+map     <F4> <esc>:bd<enter><Right>
 map     <F9> <esc>:NvimTreeClose<esc>:SessionSave<esc>:qa<enter><Right>
 nmap    <F21> <esc>:NvimTreeClose<esc>:SessionRestore<enter><Right>
 imap    <C-s> <esc>:w<enter><Right>
