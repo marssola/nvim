@@ -4,6 +4,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
 Plug 'norcalli/nvim-colorizer.lua'
 Plug 'akinsho/bufferline.nvim'
+Plug 'romgrk/barbar.nvim'
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-lualine/lualine.nvim'
