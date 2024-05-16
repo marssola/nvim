@@ -18,6 +18,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'vim-autoformat/vim-autoformat'
 Plug 'github/copilot.vim'
+Plug 'apzelos/blamer.nvim'
 if (has("nvim"))
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
@@ -170,3 +171,8 @@ let g:airline_powerline_fonts = 1
 " Autosession
 let g:auto_session_root_dir = get(g:, 'auto_session_root_dir', '~/.config/nvim/sessions')
 
+" blamer.nvim
+let g:blamer_enabled = 1
+let g:blamer_prefix = ' ➜ '
+let g:blamer_delay = 500
+highlight Blamer guifg=#666666
