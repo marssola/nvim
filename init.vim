@@ -109,6 +109,7 @@ imap    <C-Z> <esc>:redo<enter>i<Right>
 map     <C-Z> <esc>:redo<enter>i<Right>
 noremap <C-Z> <esc>:redo<enter>i<Right>
 nmap    <F2> <esc>:NvimTreeToggle<CR>
+nmap    <C-l> <esc>:NvimTreeFindFile<CR>
 noremap <C-i> :Autoformat<CR>
 noremap <C-j> :%!jq .<CR>
 
