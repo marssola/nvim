@@ -89,8 +89,8 @@ let g:onedark_config = {
 colorscheme onedark
 
 " Start NvimTreeFocus when Vim is started without file arguments.
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NvimTreeFocus | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NvimTreeFocus | endif
 
 " Remove
 autocmd BufWritePre * :%s/\s\+$//e
@@ -104,10 +104,11 @@ imap    <C-s> <esc>:w<enter><Right>
 map     <C-s> <esc>:w<enter><Right>
 imap    <C-z> <esc>:undo<enter>i<Right>
 map     <C-z> <esc>:undo<enter><Right>
-imap    <C-\> <esc>:redo<enter>i<Right>
-map     <C-\> <esc>:redo<enter>i<Right>
-nmap    <F2> <esc>:NvimTreeToggle<enter><CR>
-nmap    <C-l> <esc>:NvimTreeFindFile<enter><CR>
+noremap <C-z> <esc>:undo<enter><Right>
+imap    <C-Z> <esc>:redo<enter>i<Right>
+map     <C-Z> <esc>:redo<enter>i<Right>
+noremap <C-Z> <esc>:redo<enter>i<Right>
+nmap    <F2> <esc>:NvimTreeToggle<CR>
 noremap <C-i> :Autoformat<CR>
 noremap <C-j> :%!jq .<CR>
 
@@ -161,8 +162,8 @@ autocmd BufReadPost *
 
 autocmd! CursorHold,CursorHoldI * call HighlightWordUnderCursor()
 
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NvimTreeOpen | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NvimTreeOpen | endif
 
 " AirLine """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline#extensions#tabline#enabled = 1
